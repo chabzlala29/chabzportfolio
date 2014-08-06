@@ -13,12 +13,18 @@
         .shout-out
           %p.large Hi!
           %p.name I'm Charles Darwin Pobre
-          %p.desc I am a web app alchemist
+          %p.desc I conjure Web apps using Ruby and Javascript as my armament.
         .main-nav-container
           .nav
-            .nav-item= link_to "Home", "#"
-            .nav-item= link_to "Resume", "#"
-            .nav-item= link_to "Work", "#"
+            .nav-item
+              %span.glyphicon.glyphicon-home
+              = link_to "Home", "#"
+            .nav-item
+              %span.glyphicon.glyphicon-pencil
+              = link_to "Resume", "#"
+            .nav-item
+              %span.glyphicon.glyphicon-leaf
+              = link_to "Work", "#"
       .colored-border
         .alpha
         .beta

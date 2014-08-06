@@ -1,0 +1,29 @@
+!!!
+%html
+  %head
+    %title Chabzportfolio
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    .main-container
+      .bg-underlay
+      .bg-overlay
+      .main-nav
+        .shout-out
+          %p.large Hi!
+          %p.name I'm Charles Darwin Pobre
+          %p.desc I am a web app alchemist
+        .main-nav-container
+          .nav
+            .nav-item= link_to "Home", "#"
+            .nav-item= link_to "Resume", "#"
+            .nav-item= link_to "Work", "#"
+      .colored-border
+        .alpha
+        .beta
+        .giga
+        .hexa
+      .main-content-wrapper
+        .main-content
+          = yield
